@@ -7216,6 +7216,36 @@ W = angled&lt;p&gt;
 <wire x1="317.5" y1="-203.2" x2="297.18" y2="-203.2" width="0.1524" layer="91"/>
 <label x="292.1" y="-203.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="S5" gate="1" pin="O"/>
+<wire x1="-76.2" y1="0" x2="-68.58" y2="0" width="0.1524" layer="91"/>
+<label x="-68.58" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="S6" gate="1" pin="O"/>
+<wire x1="-76.2" y1="-17.78" x2="-68.58" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-68.58" y="-17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="S4" gate="1" pin="O"/>
+<wire x1="-76.2" y1="53.34" x2="-76.2" y2="48.26" width="0.1524" layer="91"/>
+<label x="-76.2" y="43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="S3" gate="1" pin="O"/>
+<wire x1="-55.88" y1="53.34" x2="-55.88" y2="48.26" width="0.1524" layer="91"/>
+<label x="-55.88" y="43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="S2" gate="1" pin="O"/>
+<wire x1="-38.1" y1="53.34" x2="-38.1" y2="48.26" width="0.1524" layer="91"/>
+<label x="-38.1" y="43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="S1" gate="1" pin="O"/>
+<wire x1="-20.32" y1="53.34" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
+<label x="-20.32" y="43.18" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="VO_07" class="0">
 <segment>
