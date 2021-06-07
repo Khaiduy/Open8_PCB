@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="MODULE_P0082_BOTTOMMOUNT">
+<wire x1="-24.51" y1="37.59" x2="24.51" y2="37.59" width="0.127" layer="51"/>
+<wire x1="24.51" y1="37.59" x2="24.51" y2="-37.59" width="0.127" layer="51"/>
+<wire x1="24.51" y1="-37.59" x2="-24.51" y2="-37.59" width="0.127" layer="51"/>
+<wire x1="-24.51" y1="-37.59" x2="-24.51" y2="37.59" width="0.127" layer="51"/>
+<wire x1="-24.76" y1="37.965" x2="24.76" y2="37.965" width="0.05" layer="39"/>
+<wire x1="24.76" y1="37.965" x2="24.76" y2="-37.84" width="0.05" layer="39"/>
+<wire x1="24.76" y1="-37.84" x2="-24.76" y2="-37.84" width="0.05" layer="39"/>
+<wire x1="-24.76" y1="-37.84" x2="-24.76" y2="37.965" width="0.05" layer="39"/>
+<text x="-24.51" y="38.19" size="2.54" layer="25">&gt;NAME</text>
+<text x="-24.51" y="-40.51" size="2.54" layer="27">&gt;VALUE</text>
+<wire x1="-24.51" y1="31.02" x2="-24.51" y2="-31.43" width="0.127" layer="21"/>
+<wire x1="24.51" y1="31.02" x2="24.51" y2="-31.43" width="0.127" layer="21"/>
+<wire x1="-17.69" y1="37.59" x2="18.36" y2="37.59" width="0.127" layer="21"/>
+<wire x1="-17.69" y1="-37.59" x2="18.36" y2="-37.59" width="0.127" layer="21"/>
+<pad name="S1" x="-21.21" y="34.54" drill="3.2" diameter="6.35"/>
+<pad name="S2" x="21.21" y="34.54" drill="3.2" diameter="6.35"/>
+<pad name="S3" x="-21.21" y="-34.29" drill="3.2" diameter="6.35"/>
+<pad name="S4" x="21.21" y="-34.29" drill="3.2" diameter="6.35"/>
+<pad name="JP2_1" x="-20.32" y="-26.93" drill="1.06" shape="square" rot="R180"/>
+<pad name="JP2_2" x="-22.86" y="-26.93" drill="1.06" rot="R180"/>
+<pad name="JP2_3" x="-20.32" y="-24.39" drill="1.06" rot="R180"/>
+<pad name="JP2_4" x="-22.86" y="-24.39" drill="1.06" rot="R180"/>
+<pad name="JP2_5" x="-20.32" y="-21.85" drill="1.06" rot="R180"/>
+<pad name="JP2_6" x="-22.86" y="-21.85" drill="1.06" rot="R180"/>
+<pad name="JP2_7" x="-20.32" y="-19.31" drill="1.06" rot="R180"/>
+<pad name="JP2_8" x="-22.86" y="-19.31" drill="1.06" rot="R180"/>
+<pad name="JP2_9" x="-20.32" y="-16.77" drill="1.06" rot="R180"/>
+<pad name="JP2_10" x="-22.86" y="-16.77" drill="1.06" rot="R180"/>
+<pad name="JP2_11" x="-20.32" y="-14.23" drill="1.06" rot="R180"/>
+<pad name="JP2_12" x="-22.86" y="-14.23" drill="1.06" rot="R180"/>
+<pad name="JP2_13" x="-20.32" y="-11.69" drill="1.06" rot="R180"/>
+<pad name="JP2_14" x="-22.86" y="-11.69" drill="1.06" rot="R180"/>
+<pad name="JP2_15" x="-20.32" y="-9.15" drill="1.06" rot="R180"/>
+<pad name="JP2_16" x="-22.86" y="-9.15" drill="1.06" rot="R180"/>
+<pad name="JP2_17" x="-20.32" y="-6.61" drill="1.06" rot="R180"/>
+<pad name="JP2_18" x="-22.86" y="-6.61" drill="1.06" rot="R180"/>
+<pad name="JP2_19" x="-20.32" y="-4.07" drill="1.06" rot="R180"/>
+<pad name="JP2_20" x="-22.86" y="-4.07" drill="1.06" rot="R180"/>
+<pad name="JP2_21" x="-20.32" y="-1.53" drill="1.06" rot="R180"/>
+<pad name="JP2_22" x="-22.86" y="-1.53" drill="1.06" rot="R180"/>
+<pad name="JP2_23" x="-20.32" y="1.01" drill="1.06" rot="R180"/>
+<pad name="JP2_24" x="-22.86" y="1.01" drill="1.06" rot="R180"/>
+<pad name="JP2_25" x="-20.32" y="3.55" drill="1.06" rot="R180"/>
+<pad name="JP2_26" x="-22.86" y="3.55" drill="1.06" rot="R180"/>
+<pad name="JP2_27" x="-20.32" y="6.09" drill="1.06" rot="R180"/>
+<pad name="JP2_28" x="-22.86" y="6.09" drill="1.06" rot="R180"/>
+<pad name="JP2_29" x="-20.32" y="8.63" drill="1.06" rot="R180"/>
+<pad name="JP2_30" x="-22.86" y="8.63" drill="1.06" rot="R180"/>
+<pad name="JP2_31" x="-20.32" y="11.17" drill="1.06" rot="R180"/>
+<pad name="JP2_32" x="-22.86" y="11.17" drill="1.06" rot="R180"/>
+<pad name="JP2_33" x="-20.32" y="13.71" drill="1.06" rot="R180"/>
+<pad name="JP2_34" x="-22.86" y="13.71" drill="1.06" rot="R180"/>
+<pad name="JP2_35" x="-20.32" y="16.25" drill="1.06" rot="R180"/>
+<pad name="JP2_36" x="-22.86" y="16.25" drill="1.06" rot="R180"/>
+<pad name="JP2_37" x="-20.32" y="18.79" drill="1.06" rot="R180"/>
+<pad name="JP2_38" x="-22.86" y="18.79" drill="1.06" rot="R180"/>
+<pad name="JP2_39" x="-20.32" y="21.33" drill="1.06" rot="R180"/>
+<pad name="JP2_40" x="-22.86" y="21.33" drill="1.06" rot="R180"/>
+<pad name="JP1_1" x="20.45" y="21.33" drill="1.06" shape="square" rot="R270"/>
+<pad name="JP1_2" x="22.99" y="21.33" drill="1.06" rot="R270"/>
+<pad name="JP1_3" x="20.45" y="18.79" drill="1.06" rot="R270"/>
+<pad name="JP1_4" x="22.99" y="18.79" drill="1.06" rot="R270"/>
+<pad name="JP1_5" x="20.45" y="16.25" drill="1.06" rot="R270"/>
+<pad name="JP1_6" x="22.99" y="16.25" drill="1.06" rot="R270"/>
+<pad name="JP1_7" x="20.45" y="13.71" drill="1.06" rot="R270"/>
+<pad name="JP1_8" x="22.99" y="13.71" drill="1.06" rot="R270"/>
+<pad name="JP1_9" x="20.45" y="11.17" drill="1.06" rot="R270"/>
+<pad name="JP1_10" x="22.99" y="11.17" drill="1.06" rot="R270"/>
+<pad name="JP1_11" x="20.45" y="8.63" drill="1.06" rot="R270"/>
+<pad name="JP1_12" x="22.99" y="8.63" drill="1.06" rot="R270"/>
+<pad name="JP1_13" x="20.45" y="6.09" drill="1.06" rot="R270"/>
+<pad name="JP1_14" x="22.99" y="6.09" drill="1.06" rot="R270"/>
+<pad name="JP1_15" x="20.45" y="3.55" drill="1.06" rot="R270"/>
+<pad name="JP1_16" x="22.99" y="3.55" drill="1.06" rot="R270"/>
+<pad name="JP1_17" x="20.45" y="1.01" drill="1.06" rot="R270"/>
+<pad name="JP1_18" x="22.99" y="1.01" drill="1.06" rot="R270"/>
+<pad name="JP1_19" x="20.45" y="-1.53" drill="1.06" rot="R270"/>
+<pad name="JP1_20" x="22.99" y="-1.53" drill="1.06" rot="R270"/>
+<pad name="JP1_21" x="20.45" y="-4.07" drill="1.06" rot="R270"/>
+<pad name="JP1_22" x="22.99" y="-4.07" drill="1.06" rot="R270"/>
+<pad name="JP1_23" x="20.45" y="-6.61" drill="1.06" rot="R270"/>
+<pad name="JP1_24" x="22.99" y="-6.61" drill="1.06" rot="R270"/>
+<pad name="JP1_25" x="20.45" y="-9.15" drill="1.06" rot="R270"/>
+<pad name="JP1_26" x="22.99" y="-9.15" drill="1.06" rot="R270"/>
+<pad name="JP1_27" x="20.45" y="-11.69" drill="1.06" rot="R270"/>
+<pad name="JP1_28" x="22.99" y="-11.69" drill="1.06" rot="R270"/>
+<pad name="JP1_29" x="20.45" y="-14.23" drill="1.06" rot="R270"/>
+<pad name="JP1_30" x="22.99" y="-14.23" drill="1.06" rot="R270"/>
+<pad name="JP1_31" x="20.45" y="-16.77" drill="1.06" rot="R270"/>
+<pad name="JP1_32" x="22.99" y="-16.77" drill="1.06" rot="R270"/>
+<pad name="JP1_33" x="20.45" y="-19.31" drill="1.06" rot="R270"/>
+<pad name="JP1_34" x="22.99" y="-19.31" drill="1.06" rot="R270"/>
+<pad name="JP1_35" x="20.45" y="-21.85" drill="1.06" rot="R270"/>
+<pad name="JP1_36" x="22.99" y="-21.85" drill="1.06" rot="R270"/>
+<pad name="JP1_37" x="20.45" y="-24.39" drill="1.06" rot="R270"/>
+<pad name="JP1_38" x="22.99" y="-24.39" drill="1.06" rot="R270"/>
+<pad name="JP1_39" x="20.45" y="-26.93" drill="1.06" rot="R270"/>
+<pad name="JP1_40" x="22.99" y="-26.93" drill="1.06" rot="R270"/>
+</package>
+</packages>
+<symbols>
+<symbol name="P0082_GPIO-0">
+<wire x1="17.78" y1="33.02" x2="17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-33.02" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="33.02" x2="17.78" y2="33.02" width="0.254" layer="94"/>
+<text x="-17.78" y="34.29" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GPIO_0_IN0" x="-22.86" y="22.86" length="middle"/>
+<pin name="GPIO_00" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="GPIO_0_IN1" x="-22.86" y="20.32" length="middle"/>
+<pin name="GPIO_01" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="GPIO_02" x="-22.86" y="17.78" length="middle"/>
+<pin name="GPIO_03" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="GPIO_04" x="-22.86" y="15.24" length="middle"/>
+<pin name="GPIO_05" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="GPIO_06" x="-22.86" y="12.7" length="middle"/>
+<pin name="GPIO_07" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="GPIO_08" x="-22.86" y="7.62" length="middle"/>
+<pin name="GPIO_09" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="GPIO_010" x="-22.86" y="5.08" length="middle"/>
+<pin name="GPIO-0_VCC_SYS" x="22.86" y="30.48" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO-0_VCC3P3" x="22.86" y="27.94" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO-0_GND" x="22.86" y="-30.48" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO_011" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="GPIO_012" x="-22.86" y="2.54" length="middle"/>
+<pin name="GPIO_013" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO_014" x="-22.86" y="0" length="middle"/>
+<pin name="GPIO_015" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="GPIO_016" x="-22.86" y="-2.54" length="middle"/>
+<pin name="GPIO_017" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO_018" x="-22.86" y="-5.08" length="middle"/>
+<pin name="GPIO_019" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO_020" x="-22.86" y="-7.62" length="middle"/>
+<pin name="GPIO_021" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO_022" x="-22.86" y="-10.16" length="middle"/>
+<pin name="GPIO_023" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO_024" x="-22.86" y="-15.24" length="middle"/>
+<pin name="GPIO_025" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="GPIO_026" x="-22.86" y="-17.78" length="middle"/>
+<pin name="GPIO_027" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="GPIO_028" x="-22.86" y="-20.32" length="middle"/>
+<pin name="GPIO_029" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="GPIO_030" x="-22.86" y="-22.86" length="middle"/>
+<pin name="GPIO_031" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="GPIO_032" x="-22.86" y="-25.4" length="middle"/>
+<pin name="GPIO_033" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="SHIELD" x="-22.86" y="-30.48" length="middle" direction="pas"/>
+</symbol>
+<symbol name="P0082_GPIO-1">
+<wire x1="17.78" y1="33.02" x2="17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-33.02" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="33.02" x2="17.78" y2="33.02" width="0.254" layer="94"/>
+<text x="-17.78" y="34.29" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GPIO_1_IN0" x="-22.86" y="22.86" length="middle"/>
+<pin name="GPIO_10" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="GPIO_1_IN1" x="-22.86" y="20.32" length="middle"/>
+<pin name="GPIO-1_VCC_SYS" x="22.86" y="30.48" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO-1_VCC3P3" x="22.86" y="27.94" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO-1_GND" x="22.86" y="-30.48" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO_11" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="GPIO_12" x="-22.86" y="17.78" length="middle"/>
+<pin name="GPIO_13" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="GPIO_14" x="-22.86" y="15.24" length="middle"/>
+<pin name="GPIO_15" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="GPIO_16" x="-22.86" y="12.7" length="middle"/>
+<pin name="GPIO_17" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="GPIO_18" x="-22.86" y="7.62" length="middle"/>
+<pin name="GPIO_19" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="GPIO_110" x="-22.86" y="5.08" length="middle"/>
+<pin name="GPIO_111" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="GPIO_112" x="-22.86" y="2.54" length="middle"/>
+<pin name="GPIO_113" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO_114" x="-22.86" y="0" length="middle"/>
+<pin name="GPIO_115" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="GPIO_116" x="-22.86" y="-2.54" length="middle"/>
+<pin name="GPIO_117" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO_118" x="-22.86" y="-5.08" length="middle"/>
+<pin name="GPIO_119" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO_120" x="-22.86" y="-7.62" length="middle"/>
+<pin name="GPIO_121" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO_122" x="-22.86" y="-10.16" length="middle"/>
+<pin name="GPIO_123" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO_124" x="-22.86" y="-15.24" length="middle"/>
+<pin name="GPIO_125" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="GPIO_126" x="-22.86" y="-17.78" length="middle"/>
+<pin name="GPIO_127" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="GPIO_128" x="-22.86" y="-20.32" length="middle"/>
+<pin name="GPIO_129" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="GPIO_130" x="-22.86" y="-22.86" length="middle"/>
+<pin name="GPIO_131" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="GPIO_132" x="-22.86" y="-25.4" length="middle"/>
+<pin name="GPIO_133" x="22.86" y="-25.4" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="P0082" prefix="U">
+<description>EP4CE22F17C6N Cyclone® IV FPGA Evaluation Board &lt;a href="https://pricing.snapeda.com/parts/P0082/Terasic%20Inc./view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="P0082_GPIO-0" x="-35.56" y="0" swaplevel="1"/>
+<gate name="G$2" symbol="P0082_GPIO-1" x="35.56" y="0" swaplevel="2"/>
+</gates>
+<devices>
+<device name="" package="MODULE_P0082_BOTTOMMOUNT">
+<connects>
+<connect gate="G$1" pin="GPIO-0_GND" pad="JP1_12 JP1_30"/>
+<connect gate="G$1" pin="GPIO-0_VCC3P3" pad="JP1_29"/>
+<connect gate="G$1" pin="GPIO-0_VCC_SYS" pad="JP1_11"/>
+<connect gate="G$1" pin="GPIO_00" pad="JP1_2"/>
+<connect gate="G$1" pin="GPIO_01" pad="JP1_4"/>
+<connect gate="G$1" pin="GPIO_010" pad="JP1_15"/>
+<connect gate="G$1" pin="GPIO_011" pad="JP1_16"/>
+<connect gate="G$1" pin="GPIO_012" pad="JP1_17"/>
+<connect gate="G$1" pin="GPIO_013" pad="JP1_18"/>
+<connect gate="G$1" pin="GPIO_014" pad="JP1_19"/>
+<connect gate="G$1" pin="GPIO_015" pad="JP1_20"/>
+<connect gate="G$1" pin="GPIO_016" pad="JP1_21"/>
+<connect gate="G$1" pin="GPIO_017" pad="JP1_22"/>
+<connect gate="G$1" pin="GPIO_018" pad="JP1_23"/>
+<connect gate="G$1" pin="GPIO_019" pad="JP1_24"/>
+<connect gate="G$1" pin="GPIO_02" pad="JP1_5"/>
+<connect gate="G$1" pin="GPIO_020" pad="JP1_25"/>
+<connect gate="G$1" pin="GPIO_021" pad="JP1_26"/>
+<connect gate="G$1" pin="GPIO_022" pad="JP1_27"/>
+<connect gate="G$1" pin="GPIO_023" pad="JP1_28"/>
+<connect gate="G$1" pin="GPIO_024" pad="JP1_31"/>
+<connect gate="G$1" pin="GPIO_025" pad="JP1_32"/>
+<connect gate="G$1" pin="GPIO_026" pad="JP1_33"/>
+<connect gate="G$1" pin="GPIO_027" pad="JP1_34"/>
+<connect gate="G$1" pin="GPIO_028" pad="JP1_35"/>
+<connect gate="G$1" pin="GPIO_029" pad="JP1_36"/>
+<connect gate="G$1" pin="GPIO_03" pad="JP1_6"/>
+<connect gate="G$1" pin="GPIO_030" pad="JP1_37"/>
+<connect gate="G$1" pin="GPIO_031" pad="JP1_38"/>
+<connect gate="G$1" pin="GPIO_032" pad="JP1_39"/>
+<connect gate="G$1" pin="GPIO_033" pad="JP1_40"/>
+<connect gate="G$1" pin="GPIO_04" pad="JP1_7"/>
+<connect gate="G$1" pin="GPIO_05" pad="JP1_8"/>
+<connect gate="G$1" pin="GPIO_06" pad="JP1_9"/>
+<connect gate="G$1" pin="GPIO_07" pad="JP1_10"/>
+<connect gate="G$1" pin="GPIO_08" pad="JP1_13"/>
+<connect gate="G$1" pin="GPIO_09" pad="JP1_14"/>
+<connect gate="G$1" pin="GPIO_0_IN0" pad="JP1_1"/>
+<connect gate="G$1" pin="GPIO_0_IN1" pad="JP1_3"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2 S3 S4"/>
+<connect gate="G$2" pin="GPIO-1_GND" pad="JP2_12 JP2_30"/>
+<connect gate="G$2" pin="GPIO-1_VCC3P3" pad="JP2_29"/>
+<connect gate="G$2" pin="GPIO-1_VCC_SYS" pad="JP2_11"/>
+<connect gate="G$2" pin="GPIO_10" pad="JP2_2"/>
+<connect gate="G$2" pin="GPIO_11" pad="JP2_4"/>
+<connect gate="G$2" pin="GPIO_110" pad="JP2_15"/>
+<connect gate="G$2" pin="GPIO_111" pad="JP2_16"/>
+<connect gate="G$2" pin="GPIO_112" pad="JP2_17"/>
+<connect gate="G$2" pin="GPIO_113" pad="JP2_18"/>
+<connect gate="G$2" pin="GPIO_114" pad="JP2_19"/>
+<connect gate="G$2" pin="GPIO_115" pad="JP2_20"/>
+<connect gate="G$2" pin="GPIO_116" pad="JP2_21"/>
+<connect gate="G$2" pin="GPIO_117" pad="JP2_22"/>
+<connect gate="G$2" pin="GPIO_118" pad="JP2_23"/>
+<connect gate="G$2" pin="GPIO_119" pad="JP2_24"/>
+<connect gate="G$2" pin="GPIO_12" pad="JP2_5"/>
+<connect gate="G$2" pin="GPIO_120" pad="JP2_25"/>
+<connect gate="G$2" pin="GPIO_121" pad="JP2_26"/>
+<connect gate="G$2" pin="GPIO_122" pad="JP2_27"/>
+<connect gate="G$2" pin="GPIO_123" pad="JP2_28"/>
+<connect gate="G$2" pin="GPIO_124" pad="JP2_31"/>
+<connect gate="G$2" pin="GPIO_125" pad="JP2_32"/>
+<connect gate="G$2" pin="GPIO_126" pad="JP2_33"/>
+<connect gate="G$2" pin="GPIO_127" pad="JP2_34"/>
+<connect gate="G$2" pin="GPIO_128" pad="JP2_35"/>
+<connect gate="G$2" pin="GPIO_129" pad="JP2_36"/>
+<connect gate="G$2" pin="GPIO_13" pad="JP2_6"/>
+<connect gate="G$2" pin="GPIO_130" pad="JP2_37"/>
+<connect gate="G$2" pin="GPIO_131" pad="JP2_38"/>
+<connect gate="G$2" pin="GPIO_132" pad="JP2_39"/>
+<connect gate="G$2" pin="GPIO_133" pad="JP2_40"/>
+<connect gate="G$2" pin="GPIO_14" pad="JP2_7"/>
+<connect gate="G$2" pin="GPIO_15" pad="JP2_8"/>
+<connect gate="G$2" pin="GPIO_16" pad="JP2_9"/>
+<connect gate="G$2" pin="GPIO_17" pad="JP2_10"/>
+<connect gate="G$2" pin="GPIO_18" pad="JP2_13"/>
+<connect gate="G$2" pin="GPIO_19" pad="JP2_14"/>
+<connect gate="G$2" pin="GPIO_1_IN0" pad="JP2_1"/>
+<connect gate="G$2" pin="GPIO_1_IN1" pad="JP2_3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value=""/>
+<attribute name="DESCRIPTION" value=" EP4CE22F17C6N Cyclone® IV FPGA Evaluation Board "/>
+<attribute name="MF" value="Terasic Inc."/>
+<attribute name="MP" value="P0082"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
