@@ -1,8 +1,8 @@
 # Open8_PCB
 
 The folder TR4_PGA257 contain:
-1. Schematic and layout for PGA257 Socket.
-2. Schematic and layout for TEE-PCB version 4.0.
+1. Schematic and layout for PGA257 Socket (PGA257_Socket).
+2. Schematic and layout for TEE-PCB version 4.0(TR4).
 3. Schematic of the TEE-PGA257_v3.0, used as reference.
 4. Pin map and port declaration of chip.
 
