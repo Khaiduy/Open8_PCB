@@ -4471,6 +4471,60 @@ LED</description>
 <rectangle x1="5.969" y1="-4.699" x2="6.731" y2="-2.921" layer="51"/>
 <rectangle x1="5.969" y1="-5.461" x2="6.731" y2="-4.699" layer="21"/>
 </package>
+<package name="2X02" urn="urn:adsk.eagle:footprint:22337/1" library_version="12">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="2" x="-1.27" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="3" x="1.27" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="4" x="1.27" y="1.27" drill="1.016" shape="octagon"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
+<rectangle x1="-1.524" y1="1.016" x2="-1.016" y2="1.524" layer="51"/>
+<rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
+<rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
+</package>
+<package name="2X02/90" urn="urn:adsk.eagle:footprint:22338/1" library_version="12">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="2" x="-1.27" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="4" x="1.27" y="-3.81" drill="1.016" shape="octagon"/>
+<pad name="1" x="-1.27" y="-6.35" drill="1.016" shape="octagon"/>
+<pad name="3" x="1.27" y="-6.35" drill="1.016" shape="octagon"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+<rectangle x1="-1.651" y1="-5.461" x2="-0.889" y2="-4.699" layer="21"/>
+<rectangle x1="-1.651" y1="-4.699" x2="-0.889" y2="-2.921" layer="51"/>
+<rectangle x1="0.889" y1="-4.699" x2="1.651" y2="-2.921" layer="51"/>
+<rectangle x1="0.889" y1="-5.461" x2="1.651" y2="-4.699" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X04" urn="urn:adsk.eagle:package:22461/2" type="model" library_version="11">
@@ -4507,6 +4561,18 @@ LED</description>
 <description>PIN HEADER</description>
 <packageinstances>
 <packageinstance name="2X06/90"/>
+</packageinstances>
+</package3d>
+<package3d name="2X02" urn="urn:adsk.eagle:package:22455/2" type="model" library_version="12">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X02"/>
+</packageinstances>
+</package3d>
+<package3d name="2X02/90" urn="urn:adsk.eagle:package:22456/2" type="model" library_version="12">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X02/90"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -4560,6 +4626,18 @@ LED</description>
 <pin name="10" x="5.08" y="-5.08" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="11" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="12" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="PINH2X2" urn="urn:adsk.eagle:symbol:22336/1" library_version="12">
+<wire x1="-8.89" y1="-2.54" x2="6.35" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="6.35" y1="-2.54" x2="6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="6.35" y1="5.08" x2="-8.89" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-8.89" y1="5.08" x2="-8.89" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-8.89" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-8.89" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="3" x="-5.08" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="2.54" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4752,6 +4830,66 @@ LED</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22480/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="CONNECTOR" constant="no"/>
+<attribute name="DESCRIPTION" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMP" value="" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="ROHS_COMPLIANT" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUB-CATEGORY" value="PIN-HEADER" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-2X2" urn="urn:adsk.eagle:component:16494872/2" prefix="JP" library_version="12">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="PINH2X2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X02">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22455/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="CONNECTOR" constant="no"/>
+<attribute name="DESCRIPTION" value="" constant="no"/>
+<attribute name="MANUFACTURER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OPERATING_TEMP" value="" constant="no"/>
+<attribute name="PART_STATUS" value="" constant="no"/>
+<attribute name="ROHS_COMPLIANT" value="" constant="no"/>
+<attribute name="SERIES" value="" constant="no"/>
+<attribute name="SUB-CATEGORY" value="PIN-HEADER" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="/90" package="2X02/90">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22456/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -5313,6 +5451,7 @@ LED</description>
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="6.8KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="6.8k"/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="15KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="15k"/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="6.8KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="6.8k"/>
+<part name="PARAM_0_SELECT" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-2X2" device="" package3d_urn="urn:adsk.eagle:package:22455/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -6018,6 +6157,10 @@ LED</description>
 <instance part="R6" gate="G$1" x="-66.04" y="-388.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="-63.5" y="-385.064" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="-63.5" y="-390.144" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="PARAM_0_SELECT" gate="A" x="548.64" y="-228.6" smashed="yes">
+<attribute name="NAME" x="539.75" y="-222.885" size="1.778" layer="95"/>
+<attribute name="VALUE" x="539.75" y="-233.68" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9644,21 +9787,19 @@ LED</description>
 </net>
 <net name="TLPORT_A_BITS_PARAM[0]" class="0">
 <segment>
-<pinref part="SOCKET_2" gate="A" pin="27"/>
-<wire x1="487.68" y1="-215.9" x2="480.06" y2="-215.9" width="0.1524" layer="91"/>
-<label x="477.52" y="-215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SOCKET_2" gate="A" pin="28"/>
-<wire x1="480.06" y1="-215.9" x2="477.52" y2="-215.9" width="0.1524" layer="91"/>
-<wire x1="495.3" y1="-215.9" x2="505.46" y2="-215.9" width="0.1524" layer="91"/>
-<wire x1="505.46" y1="-215.9" x2="505.46" y2="-226.06" width="0.1524" layer="91"/>
-<wire x1="505.46" y1="-226.06" x2="480.06" y2="-226.06" width="0.1524" layer="91"/>
-<wire x1="480.06" y1="-226.06" x2="480.06" y2="-215.9" width="0.1524" layer="91"/>
-<junction x="480.06" y="-215.9"/>
-</segment>
-<segment>
 <pinref part="JP18" gate="A" pin="13"/>
 <wire x1="492.76" y1="78.74" x2="482.6" y2="78.74" width="0.1524" layer="91"/>
 <label x="482.6" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="PARAM_0_SELECT" gate="A" pin="4"/>
+<wire x1="551.18" y1="-228.6" x2="561.34" y2="-228.6" width="0.1524" layer="91"/>
+<pinref part="PARAM_0_SELECT" gate="A" pin="2"/>
+<wire x1="551.18" y1="-226.06" x2="561.34" y2="-226.06" width="0.1524" layer="91"/>
+<wire x1="561.34" y1="-228.6" x2="561.34" y2="-226.06" width="0.1524" layer="91"/>
+<wire x1="561.34" y1="-226.06" x2="566.42" y2="-226.06" width="0.1524" layer="91"/>
+<junction x="561.34" y="-226.06"/>
+<label x="566.42" y="-226.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$249" class="0">
@@ -10050,6 +10191,30 @@ LED</description>
 <pinref part="JP2" gate="A" pin="8"/>
 <wire x1="-50.8" y1="12.7" x2="-33.02" y2="12.7" width="0.1524" layer="91"/>
 <label x="-38.1" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PARAM[0]_5X7.5" class="0">
+<segment>
+<pinref part="SOCKET_2" gate="A" pin="27"/>
+<wire x1="487.68" y1="-215.9" x2="477.52" y2="-215.9" width="0.1524" layer="91"/>
+<label x="477.52" y="-215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="PARAM_0_SELECT" gate="A" pin="3"/>
+<wire x1="543.56" y1="-228.6" x2="533.4" y2="-228.6" width="0.1524" layer="91"/>
+<label x="533.4" y="-228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PARAM[0]_5X5" class="0">
+<segment>
+<pinref part="SOCKET_2" gate="A" pin="28"/>
+<wire x1="495.3" y1="-215.9" x2="505.46" y2="-215.9" width="0.1524" layer="91"/>
+<label x="505.46" y="-215.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="PARAM_0_SELECT" gate="A" pin="1"/>
+<wire x1="543.56" y1="-226.06" x2="533.4" y2="-226.06" width="0.1524" layer="91"/>
+<label x="533.4" y="-226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
