@@ -5673,9 +5673,7 @@ W = angled&lt;p&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="-242.92" y="-94.43" size="1.778" layer="91">Regulator - 5V to 1.2V</text>
 <text x="-248.92" y="-38.1" size="2.54" layer="91">POWER</text>
-<text x="-230.22" y="-508.45" size="1.778" layer="91">Regulator - 5V to 1.2V</text>
 <text x="177.8" y="-434.34" size="2.54" layer="91">CLOCK GENERATOR</text>
 <text x="53.34" y="193.04" size="2.54" layer="91">RESET</text>
 <text x="577.54" y="-383.66" size="1.6764" layer="91">Mounting holes</text>
