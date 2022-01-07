@@ -1030,6 +1030,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-24" y1="0" x2="-26.5" y2="0" width="0.127" layer="21"/>
 <text x="-26.67" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="RFM95W-915S2">
+<pad name="P$1" x="-6" y="5" drill="0.7" shape="square"/>
+<pad name="P$2" x="-6" y="3" drill="0.7" shape="long"/>
+<pad name="P$3" x="-6" y="1" drill="0.7" shape="long"/>
+<pad name="P$4" x="-6" y="-1" drill="0.7" shape="long"/>
+<pad name="P$5" x="-6" y="-3" drill="0.7" shape="long"/>
+<pad name="P$6" x="-6" y="-5" drill="0.7" shape="long"/>
+<pad name="P$7" x="-6" y="-7" drill="0.7" shape="long"/>
+<pad name="P$8" x="-6" y="-9" drill="0.7" shape="long"/>
+<pad name="P$9" x="7" y="5" drill="0.7" shape="long"/>
+<pad name="P$10" x="7" y="3" drill="0.7" shape="long"/>
+<pad name="P$11" x="7" y="1" drill="0.7" shape="long"/>
+<pad name="P$12" x="7" y="-1" drill="0.7" shape="long"/>
+<pad name="P$13" x="7" y="-3" drill="0.7" shape="long"/>
+<pad name="P$14" x="7" y="-5" drill="0.7" shape="long"/>
+<text x="-8" y="7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8" y="-12" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="P$15" x="7" y="-7" drill="0.7" shape="long"/>
+<pad name="P$16" x="7" y="-9" drill="0.7" shape="long"/>
+<wire x1="-8" y1="6" x2="9" y2="6" width="0.127" layer="51"/>
+<wire x1="9" y1="6" x2="9" y2="-10" width="0.127" layer="51"/>
+<wire x1="9" y1="-10" x2="-8" y2="-10" width="0.127" layer="51"/>
+<wire x1="-8" y1="-10" x2="-8" y2="6" width="0.127" layer="51"/>
+<wire x1="-8" y1="6" x2="9" y2="6" width="0.127" layer="21"/>
+<wire x1="9" y1="6" x2="9" y2="-10" width="0.127" layer="21"/>
+<wire x1="9" y1="-10" x2="-8" y2="-10" width="0.127" layer="21"/>
+<wire x1="-8" y1="-10" x2="-8" y2="6" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2X42_HEADER">
@@ -1080,6 +1108,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="7.62" y1="-53.34" x2="7.62" y2="53.34" width="0.254" layer="94"/>
 <wire x1="7.62" y1="53.34" x2="-5.08" y2="53.34" width="0.254" layer="94"/>
 <text x="-5.08" y="55.88" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="RFM95W-915S2">
+<pin name="GND_1" x="-12.7" y="7.62" length="middle"/>
+<pin name="MISO" x="-12.7" y="5.08" length="middle"/>
+<pin name="MOSI" x="-12.7" y="2.54" length="middle"/>
+<pin name="SCK" x="-12.7" y="0" length="middle"/>
+<pin name="NSS" x="-12.7" y="-2.54" length="middle"/>
+<pin name="RESET" x="-12.7" y="-5.08" length="middle"/>
+<pin name="DIO5" x="-12.7" y="-7.62" length="middle"/>
+<pin name="GND_2" x="-12.7" y="-10.16" length="middle"/>
+<pin name="DIO2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="DIO1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="DIO0" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="3.3V" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="DIO4" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="DIO3" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND_3" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="ANT" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="12.7" size="2.54" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="2.54" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1132,6 +1184,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFM95W-915S2" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RFM95W-915S2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFM95W-915S2">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="P$12"/>
+<connect gate="G$1" pin="ANT" pad="P$16"/>
+<connect gate="G$1" pin="DIO0" pad="P$11"/>
+<connect gate="G$1" pin="DIO1" pad="P$10"/>
+<connect gate="G$1" pin="DIO2" pad="P$9"/>
+<connect gate="G$1" pin="DIO3" pad="P$14"/>
+<connect gate="G$1" pin="DIO4" pad="P$13"/>
+<connect gate="G$1" pin="DIO5" pad="P$7"/>
+<connect gate="G$1" pin="GND_1" pad="P$1"/>
+<connect gate="G$1" pin="GND_2" pad="P$8"/>
+<connect gate="G$1" pin="GND_3" pad="P$15"/>
+<connect gate="G$1" pin="MISO" pad="P$2"/>
+<connect gate="G$1" pin="MOSI" pad="P$3"/>
+<connect gate="G$1" pin="NSS" pad="P$5"/>
+<connect gate="G$1" pin="RESET" pad="P$6"/>
+<connect gate="G$1" pin="SCK" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2474,96 +2556,6 @@ Source: &lt;a href="https://componentsearchengine.com//2985-6004.pdf"&gt; Datash
 <attribute name="THERMALLOSS" value="" constant="no"/>
 <attribute name="TYPE" value="" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="qfp160">
-<packages>
-<package name="RFM95-915S2">
-<pad name="P$1" x="-7.7" y="7" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$2" x="-7.7" y="5" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$3" x="-7.7" y="3" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$4" x="-7.7" y="1" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$5" x="-7.7" y="-1" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$6" x="-7.7" y="-3" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$7" x="-7.7" y="-5" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$8" x="-7.7" y="-7" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$9" x="7.7" y="7" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$10" x="7.7" y="5" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$11" x="7.7" y="3" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$12" x="7.7" y="1" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$13" x="7.7" y="-1" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$14" x="7.7" y="-3" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$15" x="7.7" y="-5" drill="0.7" diameter="0.7" shape="long"/>
-<pad name="P$16" x="7.7" y="-7" drill="0.7" diameter="0.7" shape="long"/>
-<text x="-9" y="10" size="1.27" layer="25">&gt;NAME</text>
-<text x="-9" y="-11" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-10.16" y1="8.89" x2="10.16" y2="8.89" width="0.127" layer="51"/>
-<wire x1="10.16" y1="8.89" x2="10.16" y2="-8.89" width="0.127" layer="51"/>
-<wire x1="10.16" y1="-8.89" x2="-10.16" y2="-8.89" width="0.127" layer="51"/>
-<wire x1="-10.16" y1="-8.89" x2="-10.16" y2="8.89" width="0.127" layer="51"/>
-<wire x1="-10.16" y1="8.89" x2="10.16" y2="8.89" width="0.127" layer="21"/>
-<wire x1="10.16" y1="8.89" x2="10.16" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-8.89" x2="-10.16" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="-8.89" x2="-10.16" y2="8.89" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="RFM95-915S2">
-<pin name="GND_1" x="-15.24" y="15.24" length="middle"/>
-<pin name="MISO" x="-15.24" y="10.16" length="middle"/>
-<pin name="MOSI" x="-15.24" y="5.08" length="middle"/>
-<pin name="SCK" x="-15.24" y="0" length="middle"/>
-<pin name="NSS" x="-15.24" y="-5.08" length="middle"/>
-<pin name="RESET" x="-15.24" y="-10.16" length="middle"/>
-<pin name="DIO5" x="-15.24" y="-15.24" length="middle"/>
-<pin name="GND_2" x="-15.24" y="-20.32" length="middle"/>
-<pin name="DIO2" x="17.78" y="15.24" length="middle" rot="R180"/>
-<pin name="DIO1" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="DIO0" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="3.3V" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="DIO4" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="DIO3" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="GND_3" x="17.78" y="-15.24" length="middle" rot="R180"/>
-<pin name="ANT" x="17.78" y="-20.32" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-22.86" x2="12.7" y2="17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
-<text x="-10.16" y="20.32" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-25.4" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="RFM95W-915S2" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="RFM95-915S2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RFM95-915S2">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="P$12"/>
-<connect gate="G$1" pin="ANT" pad="P$16"/>
-<connect gate="G$1" pin="DIO0" pad="P$11"/>
-<connect gate="G$1" pin="DIO1" pad="P$10"/>
-<connect gate="G$1" pin="DIO2" pad="P$9"/>
-<connect gate="G$1" pin="DIO3" pad="P$14"/>
-<connect gate="G$1" pin="DIO4" pad="P$13"/>
-<connect gate="G$1" pin="DIO5" pad="P$7"/>
-<connect gate="G$1" pin="GND_1" pad="P$1"/>
-<connect gate="G$1" pin="GND_2" pad="P$8"/>
-<connect gate="G$1" pin="GND_3" pad="P$15"/>
-<connect gate="G$1" pin="MISO" pad="P$2"/>
-<connect gate="G$1" pin="MOSI" pad="P$3"/>
-<connect gate="G$1" pin="NSS" pad="P$5"/>
-<connect gate="G$1" pin="RESET" pad="P$6"/>
-<connect gate="G$1" pin="SCK" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -5078,7 +5070,6 @@ Source: http://www.osram.convergy.de/</description>
 <part name="U$3" library="Duy" deviceset="2X41_HEADER" device=""/>
 <part name="U$4" library="Duy" deviceset="2X41_HEADER" device=""/>
 <part name="SUPPLY40" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="LORA_MODULE" library="qfp160" deviceset="RFM95W-915S2" device=""/>
 <part name="SUPPLY58" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="FLASH" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-2X6" device="" package3d_urn="urn:adsk.eagle:package:22474/2"/>
 <part name="ALL_JTAG" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X10" device="" package3d_urn="urn:adsk.eagle:package:22405/2"/>
@@ -5271,6 +5262,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>
+<part name="U$5" library="Duy" deviceset="RFM95W-915S2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5306,10 +5298,6 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="U$4" gate="G$1" x="-238.76" y="116.84" smashed="yes"/>
 <instance part="SUPPLY40" gate="GND" x="60.638" y="265.822" smashed="yes">
 <attribute name="VALUE" x="58.533" y="262.447" size="1.778" layer="96"/>
-</instance>
-<instance part="LORA_MODULE" gate="G$1" x="33.02" y="292.1" smashed="yes">
-<attribute name="NAME" x="22.86" y="312.42" size="1.27" layer="95"/>
-<attribute name="VALUE" x="25.4" y="266.7" size="1.27" layer="96"/>
 </instance>
 <instance part="SUPPLY58" gate="GND" x="7.62" y="266.7" smashed="yes">
 <attribute name="VALUE" x="5.715" y="263.525" size="1.778" layer="96"/>
@@ -6042,6 +6030,10 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="SHEET" x="441.96" y="-250.19" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="373.38" y="-232.41" size="2.54" layer="94"/>
 </instance>
+<instance part="U$5" gate="G$1" x="33.02" y="299.72" smashed="yes">
+<attribute name="NAME" x="25.4" y="312.42" size="2.54" layer="95"/>
+<attribute name="VALUE" x="25.4" y="281.94" size="2.54" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6109,20 +6101,20 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-322.58" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LORA_MODULE" gate="G$1" pin="GND_3"/>
 <pinref part="SUPPLY40" gate="GND" pin="GND"/>
-<wire x1="50.8" y1="276.86" x2="60.638" y2="276.86" width="0.1524" layer="91"/>
-<wire x1="60.638" y1="276.86" x2="60.638" y2="268.362" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="292.1" x2="60.638" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="60.638" y1="292.1" x2="60.638" y2="268.362" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="GND_3"/>
 </segment>
 <segment>
-<pinref part="LORA_MODULE" gate="G$1" pin="GND_1"/>
-<wire x1="17.78" y1="307.34" x2="7.62" y2="307.34" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="307.34" x2="7.62" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="307.34" x2="7.62" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="307.34" x2="7.62" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY58" gate="GND" pin="GND"/>
-<pinref part="LORA_MODULE" gate="G$1" pin="GND_2"/>
-<wire x1="7.62" y1="271.78" x2="7.62" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="271.78" x2="7.62" y2="271.78" width="0.1524" layer="91"/>
-<junction x="7.62" y="271.78"/>
+<wire x1="7.62" y1="289.56" x2="7.62" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="289.56" x2="7.62" y2="289.56" width="0.1524" layer="91"/>
+<junction x="7.62" y="289.56"/>
+<pinref part="U$5" gate="G$1" pin="GND_1"/>
+<pinref part="U$5" gate="G$1" pin="GND_2"/>
 </segment>
 <segment>
 <pinref part="FLASH" gate="A" pin="3"/>
@@ -6636,9 +6628,9 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="R36" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="LORA_MODULE" gate="G$1" pin="3.3V"/>
-<wire x1="50.8" y1="292.1" x2="60.96" y2="292.1" width="0.1524" layer="91"/>
-<label x="60.96" y="292.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="299.72" x2="60.96" y2="299.72" width="0.1524" layer="91"/>
+<label x="60.96" y="299.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$5" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="FLASH" gate="A" pin="1"/>
@@ -7366,9 +7358,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-254" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LORA_MODULE" gate="G$1" pin="SCK"/>
-<wire x1="17.78" y1="292.1" x2="5.08" y2="292.1" width="0.1524" layer="91"/>
-<label x="5.08" y="292.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="20.32" y1="299.72" x2="5.08" y2="299.72" width="0.1524" layer="91"/>
+<label x="5.08" y="299.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$5" gate="G$1" pin="SCK"/>
 </segment>
 </net>
 <net name="DR_ALL_O_SPI_COPI" class="0">
@@ -7378,9 +7370,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-254" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LORA_MODULE" gate="G$1" pin="MOSI"/>
-<wire x1="17.78" y1="297.18" x2="5.08" y2="297.18" width="0.1524" layer="91"/>
-<label x="5.08" y="297.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="20.32" y1="302.26" x2="5.08" y2="302.26" width="0.1524" layer="91"/>
+<label x="5.08" y="302.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$5" gate="G$1" pin="MOSI"/>
 </segment>
 </net>
 <net name="DR_SERV_VDD" class="0">
@@ -7419,9 +7411,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-254" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LORA_MODULE" gate="G$1" pin="MISO"/>
-<wire x1="17.78" y1="302.26" x2="5.08" y2="302.26" width="0.1524" layer="91"/>
-<label x="5.08" y="302.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="20.32" y1="304.8" x2="5.08" y2="304.8" width="0.1524" layer="91"/>
+<label x="5.08" y="304.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$5" gate="G$1" pin="MISO"/>
 </segment>
 </net>
 <net name="DR_ALL_O_SPI_CS" class="0">
@@ -7431,9 +7423,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-254" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LORA_MODULE" gate="G$1" pin="NSS"/>
-<wire x1="17.78" y1="287.02" x2="5.08" y2="287.02" width="0.1524" layer="91"/>
-<label x="5.08" y="287.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="20.32" y1="297.18" x2="5.08" y2="297.18" width="0.1524" layer="91"/>
+<label x="5.08" y="297.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$5" gate="G$1" pin="NSS"/>
 </segment>
 </net>
 <net name="DR_ALL_O_SPIFLASH_SCK" class="0">
