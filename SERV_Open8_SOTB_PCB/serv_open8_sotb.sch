@@ -1458,6 +1458,31 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-0.225" y1="-1.45" x2="-0.225" y2="1.45" width="0.2" layer="21"/>
 <wire x1="-1.625" y1="1.5" x2="-0.575" y2="1.5" width="0.2" layer="21"/>
 </package>
+<package name="SOT95P285X145-5N">
+<description>&lt;b&gt;SOT25(H=1.45mm)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.3" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="2" x="-1.3" y="0" dx="1.2" dy="0.6" layer="1"/>
+<smd name="3" x="-1.3" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="4" x="1.3" y="-0.95" dx="1.2" dy="0.6" layer="1"/>
+<smd name="5" x="1.3" y="0.95" dx="1.2" dy="0.6" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.15" y1="1.8" x2="2.15" y2="1.8" width="0.05" layer="51"/>
+<wire x1="2.15" y1="1.8" x2="2.15" y2="-1.8" width="0.05" layer="51"/>
+<wire x1="2.15" y1="-1.8" x2="-2.15" y2="-1.8" width="0.05" layer="51"/>
+<wire x1="-2.15" y1="-1.8" x2="-2.15" y2="1.8" width="0.05" layer="51"/>
+<wire x1="-0.8" y1="1.5" x2="0.8" y2="1.5" width="0.1" layer="51"/>
+<wire x1="0.8" y1="1.5" x2="0.8" y2="-1.5" width="0.1" layer="51"/>
+<wire x1="0.8" y1="-1.5" x2="-0.8" y2="-1.5" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="-1.5" x2="-0.8" y2="1.5" width="0.1" layer="51"/>
+<wire x1="-0.8" y1="0.55" x2="0.15" y2="1.5" width="0.1" layer="51"/>
+<wire x1="-0.35" y1="1.5" x2="0.35" y2="1.5" width="0.2" layer="21"/>
+<wire x1="0.35" y1="1.5" x2="0.35" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="0.35" y1="-1.5" x2="-0.35" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-0.35" y1="-1.5" x2="-0.35" y2="1.5" width="0.2" layer="21"/>
+<wire x1="-1.9" y1="1.5" x2="-0.7" y2="1.5" width="0.2" layer="21"/>
+</package>
 <package name="SOT95P280X145-5N">
 <description>&lt;b&gt;DBV (R-PDSO-G5)&lt;/b&gt;&lt;br&gt;
 </description>
@@ -1588,18 +1613,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="S" x="0" y="-2.54" length="middle"/>
 <pin name="D" x="20.32" y="0" length="middle" rot="R180"/>
 </symbol>
-<symbol name="TPS76201DBVR">
+<symbol name="AP7331-WG-7">
 <wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
 <text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="IN" x="0" y="0" length="middle" direction="in"/>
-<pin name="GND" x="0" y="-2.54" length="middle" direction="pwr"/>
-<pin name="!EN" x="0" y="-5.08" length="middle"/>
-<pin name="FB" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="OUT" x="25.4" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="IN" x="0" y="0" length="middle"/>
+<pin name="GND" x="0" y="-2.54" length="middle"/>
+<pin name="EN" x="0" y="-5.08" length="middle"/>
+<pin name="ADJ" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="OUT" x="25.4" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 <symbol name="SS12SDP2">
 <wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.254" layer="94"/>
@@ -1686,31 +1711,31 @@ Source: &lt;a href="http://www.nxp.com/documents/data_sheet/BSH103.pdf"&gt; Data
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS76201DBVR" prefix="IC">
-<description>&lt;b&gt;Reg LDO Lin Adj Pos 0.7V to 5.5V 0.1A Texas Instruments TPS76201DBVR, LDO Voltage Regulator, Adjustable 0.1A, 0.7 ??? 5.5 V, 5-Pin SOT-23&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-302/23154.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<deviceset name="AP7331-WG-7" prefix="IC">
+<description>&lt;b&gt;LDO Voltage Regulators LDO SOT-25 ADJUSTABLE 300MA&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://uk.rs-online.com/web/p/products/7513083"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="TPS76201DBVR" x="0" y="0"/>
+<gate name="G$1" symbol="AP7331-WG-7" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT95P280X145-5N">
+<device name="" package="SOT95P285X145-5N">
 <connects>
-<connect gate="G$1" pin="!EN" pad="3"/>
-<connect gate="G$1" pin="FB" pad="4"/>
+<connect gate="G$1" pin="ADJ" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="ARROW_PART_NUMBER" value="TPS76201DBVR" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/tps76201dbvr/texas-instruments" constant="no"/>
-<attribute name="DESCRIPTION" value="Reg LDO Lin Adj Pos 0.7V to 5.5V 0.1A Texas Instruments TPS76201DBVR, LDO Voltage Regulator, Adjustable 0.1A, 0.7 ??? 5.5 V, 5-Pin SOT-23" constant="no"/>
+<attribute name="ARROW_PART_NUMBER" value="AP7331-WG-7" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/ap7331-wg-7/diodes-incorporated?region=nac" constant="no"/>
+<attribute name="DESCRIPTION" value="LDO Voltage Regulators LDO SOT-25 ADJUSTABLE 300MA" constant="no"/>
 <attribute name="HEIGHT" value="1.45mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="TPS76201DBVR" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="595-TPS76201DBVR" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS76201DBVR?qs=xJkDX%2FqrskNr%252BnYlk%252B9fUg%3D%3D" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Diodes Inc." constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AP7331-WG-7" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="621-AP7331-WG-7" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP7331-WG-7?qs=vIZ3oKQCLxr9PiNSCoXN%2FQ%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5082,60 +5107,54 @@ Source: http://www.osram.convergy.de/</description>
 <part name="GND" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="IC1" library="SamacSys_Parts" deviceset="TPS76201DBVR" device=""/>
+<part name="IC1" library="SamacSys_Parts" deviceset="AP7331-WG-7" device=""/>
 <part name="C22" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R24" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="66.5k"/>
 <part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R25" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="3.3k"/>
+<part name="R25" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="66.5k"/>
 <part name="C25" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="4.7uF"/>
-<part name="R26" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="1"/>
 <part name="VDDLS" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="IC2" library="SamacSys_Parts" deviceset="TPS76201DBVR" device=""/>
+<part name="IC2" library="SamacSys_Parts" deviceset="AP7331-WG-7" device=""/>
 <part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="66.5k"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="53.6k"/>
+<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="133k"/>
 <part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="4.7uF"/>
-<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="1"/>
 <part name="VDDH" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="IC5" library="SamacSys_Parts" deviceset="TPS76201DBVR" device=""/>
+<part name="IC5" library="SamacSys_Parts" deviceset="AP7331-WG-7" device=""/>
 <part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="66.5k"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="243k"/>
+<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="482k"/>
 <part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="4.7uF"/>
-<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="1"/>
 <part name="VCCQ" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="IC7" library="SamacSys_Parts" deviceset="TPS76201DBVR" device=""/>
+<part name="IC7" library="SamacSys_Parts" deviceset="AP7331-WG-7" device=""/>
 <part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="66.5k"/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="243k"/>
+<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="482k"/>
 <part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="4.7uF"/>
-<part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="1"/>
 <part name="VDD_3V3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="IC8" library="SamacSys_Parts" deviceset="TPS76201DBVR" device=""/>
+<part name="IC8" library="SamacSys_Parts" deviceset="AP7331-WG-7" device=""/>
 <part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="66.5k"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="53.6k"/>
+<part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="133k"/>
 <part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="4.7uF"/>
-<part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="1"/>
 <part name="VDD_CORE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="POWER" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2"/>
-<part name="IC9" library="SamacSys_Parts" deviceset="TPS76201DBVR" device=""/>
+<part name="IC9" library="SamacSys_Parts" deviceset="AP7331-WG-7" device=""/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R13" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="66.5k"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R14" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="53.6k"/>
+<part name="R14" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="133k"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="4.7uF"/>
-<part name="R15" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="1"/>
 <part name="VDD" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="C11" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="10uF"/>
 <part name="C12" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="0.1uF"/>
@@ -5263,6 +5282,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="3.3" package3d_urn="urn:adsk.eagle:package:14278/1"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_D_L" device=""/>
 <part name="U$5" library="Duy" deviceset="RFM95W-915S2" device=""/>
+<part name="POWER_LED" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -5368,10 +5388,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="-252.476" y="8.001" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-252.476" y="2.921" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R26" gate="G$1" x="-254" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="-252.476" y="-5.08" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="-255.524" y="-5.08" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
-</instance>
 <instance part="VDDLS" gate="G$1" x="-345.44" y="10.16" smashed="yes">
 <attribute name="NAME" x="-351.79" y="15.875" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-351.79" y="5.08" size="1.778" layer="96"/>
@@ -5401,10 +5417,6 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="C2" gate="G$1" x="-254" y="-40.64" smashed="yes">
 <attribute name="NAME" x="-252.476" y="-37.719" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-252.476" y="-42.799" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="R3" gate="G$1" x="-254" y="-50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="-252.476" y="-50.8" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="-255.524" y="-50.8" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
 <instance part="VDDH" gate="G$1" x="-345.44" y="-35.56" smashed="yes">
 <attribute name="NAME" x="-351.79" y="-29.845" size="1.778" layer="95"/>
@@ -5436,10 +5448,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="-252.476" y="-80.899" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-252.476" y="-85.979" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R6" gate="G$1" x="-254" y="-93.98" smashed="yes" rot="R270">
-<attribute name="NAME" x="-252.476" y="-93.98" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="-255.524" y="-93.98" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
-</instance>
 <instance part="VCCQ" gate="G$1" x="-345.44" y="-78.74" smashed="yes">
 <attribute name="NAME" x="-351.79" y="-73.025" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-351.79" y="-83.82" size="1.778" layer="96"/>
@@ -5470,10 +5478,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="-252.476" y="-126.619" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-252.476" y="-131.699" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R9" gate="G$1" x="-254" y="-139.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="-252.476" y="-139.7" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="-255.524" y="-139.7" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
-</instance>
 <instance part="VDD_3V3" gate="G$1" x="-345.44" y="-124.46" smashed="yes">
 <attribute name="NAME" x="-351.79" y="-118.745" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-351.79" y="-129.54" size="1.778" layer="96"/>
@@ -5503,10 +5507,6 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="C8" gate="G$1" x="-254" y="-170.18" smashed="yes">
 <attribute name="NAME" x="-252.476" y="-167.259" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-252.476" y="-172.339" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="R12" gate="G$1" x="-254" y="-180.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="-252.476" y="-180.34" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="-255.524" y="-180.34" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
 <instance part="VDD_CORE" gate="G$1" x="-345.44" y="-165.1" smashed="yes">
 <attribute name="NAME" x="-351.79" y="-159.385" size="1.778" layer="95"/>
@@ -5541,10 +5541,6 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="C10" gate="G$1" x="-254" y="-208.28" smashed="yes">
 <attribute name="NAME" x="-252.476" y="-205.359" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="-252.476" y="-210.439" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="R15" gate="G$1" x="-254" y="-218.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="-252.476" y="-218.44" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="-255.524" y="-218.44" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
 </instance>
 <instance part="VDD" gate="G$1" x="-345.44" y="-203.2" smashed="yes">
 <attribute name="NAME" x="-351.79" y="-197.485" size="1.778" layer="95"/>
@@ -6034,6 +6030,10 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="25.4" y="312.42" size="2.54" layer="95"/>
 <attribute name="VALUE" x="25.4" y="281.94" size="2.54" layer="96"/>
 </instance>
+<instance part="POWER_LED" gate="A" x="-182.88" y="-195.58" smashed="yes">
+<attribute name="NAME" x="-189.23" y="-189.865" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-189.23" y="-203.2" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6209,21 +6209,18 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="SUPPLY30" gate="GND" pin="GND"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="-307.34" y1="12.7" x2="-309.88" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="12.7" x2="-309.88" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="10.16" x2="-309.88" y2="0" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="12.7" x2="-309.88" y2="0" width="0.1524" layer="91"/>
 <wire x1="-309.88" y1="0" x2="-320.04" y2="0" width="0.1524" layer="91"/>
 <junction x="-320.04" y="0"/>
-<pinref part="IC1" gate="G$1" pin="!EN"/>
-<wire x1="-307.34" y1="10.16" x2="-309.88" y2="10.16" width="0.1524" layer="91"/>
-<junction x="-309.88" y="10.16"/>
 </segment>
 <segment>
 <pinref part="SUPPLY31" gate="GND" pin="GND"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="-271.78" y1="-10.16" x2="-271.78" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="-254" y1="-10.16" x2="-271.78" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-271.78" y="-10.16"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="-254" y1="2.54" x2="-254" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -6231,21 +6228,18 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="-307.34" y1="-33.02" x2="-309.88" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-33.02" x2="-309.88" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-35.56" x2="-309.88" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="-33.02" x2="-309.88" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-309.88" y1="-45.72" x2="-320.04" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-45.72"/>
-<pinref part="IC2" gate="G$1" pin="!EN"/>
-<wire x1="-307.34" y1="-35.56" x2="-309.88" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-35.56"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-271.78" y1="-55.88" x2="-271.78" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-254" y1="-55.88" x2="-271.78" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="-271.78" y="-55.88"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="-254" y1="-43.18" x2="-254" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -6253,21 +6247,18 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <pinref part="IC5" gate="G$1" pin="GND"/>
 <wire x1="-307.34" y1="-76.2" x2="-309.88" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-76.2" x2="-309.88" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-78.74" x2="-309.88" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="-76.2" x2="-309.88" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="-309.88" y1="-88.9" x2="-320.04" y2="-88.9" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-88.9"/>
-<pinref part="IC5" gate="G$1" pin="!EN"/>
-<wire x1="-307.34" y1="-78.74" x2="-309.88" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-78.74"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="-271.78" y1="-99.06" x2="-271.78" y2="-96.52" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="-254" y1="-99.06" x2="-271.78" y2="-99.06" width="0.1524" layer="91"/>
 <junction x="-271.78" y="-99.06"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="-254" y1="-86.36" x2="-254" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -6275,21 +6266,18 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <pinref part="IC7" gate="G$1" pin="GND"/>
 <wire x1="-307.34" y1="-121.92" x2="-309.88" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-121.92" x2="-309.88" y2="-124.46" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-124.46" x2="-309.88" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="-121.92" x2="-309.88" y2="-134.62" width="0.1524" layer="91"/>
 <wire x1="-309.88" y1="-134.62" x2="-320.04" y2="-134.62" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-134.62"/>
-<pinref part="IC7" gate="G$1" pin="!EN"/>
-<wire x1="-307.34" y1="-124.46" x2="-309.88" y2="-124.46" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-124.46"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="-271.78" y1="-144.78" x2="-271.78" y2="-142.24" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="-254" y1="-144.78" x2="-271.78" y2="-144.78" width="0.1524" layer="91"/>
 <junction x="-271.78" y="-144.78"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="-254" y1="-132.08" x2="-254" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -6297,21 +6285,18 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <pinref part="IC8" gate="G$1" pin="GND"/>
 <wire x1="-307.34" y1="-162.56" x2="-309.88" y2="-162.56" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-162.56" x2="-309.88" y2="-165.1" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-165.1" x2="-309.88" y2="-175.26" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="-162.56" x2="-309.88" y2="-175.26" width="0.1524" layer="91"/>
 <wire x1="-309.88" y1="-175.26" x2="-320.04" y2="-175.26" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-175.26"/>
-<pinref part="IC8" gate="G$1" pin="!EN"/>
-<wire x1="-307.34" y1="-165.1" x2="-309.88" y2="-165.1" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-165.1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-271.78" y1="-185.42" x2="-271.78" y2="-182.88" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="-254" y1="-185.42" x2="-271.78" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="-271.78" y="-185.42"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="-254" y1="-172.72" x2="-254" y2="-185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -6319,21 +6304,18 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <pinref part="IC9" gate="G$1" pin="GND"/>
 <wire x1="-307.34" y1="-200.66" x2="-309.88" y2="-200.66" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-200.66" x2="-309.88" y2="-203.2" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-203.2" x2="-309.88" y2="-213.36" width="0.1524" layer="91"/>
+<wire x1="-309.88" y1="-200.66" x2="-309.88" y2="-213.36" width="0.1524" layer="91"/>
 <wire x1="-309.88" y1="-213.36" x2="-320.04" y2="-213.36" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-213.36"/>
-<pinref part="IC9" gate="G$1" pin="!EN"/>
-<wire x1="-307.34" y1="-203.2" x2="-309.88" y2="-203.2" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-203.2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="-271.78" y1="-223.52" x2="-271.78" y2="-220.98" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="-254" y1="-223.52" x2="-271.78" y2="-223.52" width="0.1524" layer="91"/>
 <junction x="-271.78" y="-223.52"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="-254" y1="-210.82" x2="-254" y2="-223.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="2"/>
@@ -7006,15 +6988,6 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-355.6" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q5" gate="G$1" pin="G"/>
-<wire x1="-71.12" y1="-53.34" x2="-81.28" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="-81.28" y1="-53.34" x2="-81.28" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="-53.34" x2="-91.44" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="-81.28" y="-53.34"/>
-<label x="-91.44" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="POWER" gate="A" pin="8"/>
 <wire x1="-165.1" y1="2.54" x2="-73.66" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C37" gate="G$1" pin="1"/>
@@ -7026,6 +6999,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-60.96" y1="-7.62" x2="-60.96" y2="2.54" width="0.1524" layer="91"/>
 <junction x="-60.96" y="2.54"/>
 <label x="2.54" y="2.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="POWER_LED" gate="A" pin="5"/>
+<wire x1="-185.42" y1="-198.12" x2="-200.66" y2="-198.12" width="0.1524" layer="91"/>
+<label x="-200.66" y="-198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DR_ALL_DIPSW[1]" class="0">
@@ -7317,15 +7295,6 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-254" y="251.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q7" gate="G$1" pin="G"/>
-<wire x1="-71.12" y1="-119.38" x2="-81.28" y2="-119.38" width="0.1524" layer="91"/>
-<pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="-81.28" y1="-119.38" x2="-81.28" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="-119.38" x2="-91.44" y2="-119.38" width="0.1524" layer="91"/>
-<junction x="-81.28" y="-119.38"/>
-<label x="-91.44" y="-119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="VBP" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="104.14" x2="-76.2" y2="104.14" width="0.1524" layer="91"/>
 <label x="-76.2" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -7342,6 +7311,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-86.36" y1="-7.62" x2="-86.36" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-86.36" y="5.08"/>
 <label x="2.54" y="5.08" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="POWER_LED" gate="A" pin="3"/>
+<wire x1="-185.42" y1="-195.58" x2="-200.66" y2="-195.58" width="0.1524" layer="91"/>
+<label x="-200.66" y="-195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="56" class="0">
@@ -7382,15 +7356,6 @@ Source: http://www.osram.convergy.de/</description>
 <label x="-220.98" y="236.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="-71.12" y1="-86.36" x2="-81.28" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="-81.28" y1="-86.36" x2="-81.28" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="-86.36" x2="-91.44" y2="-86.36" width="0.1524" layer="91"/>
-<junction x="-81.28" y="-86.36"/>
-<label x="-91.44" y="-86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="POWER" gate="A" pin="4"/>
 <wire x1="-165.1" y1="7.62" x2="-124.46" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C26" gate="G$1" pin="1"/>
@@ -7402,6 +7367,11 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-111.76" y1="-7.62" x2="-111.76" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-111.76" y="7.62"/>
 <label x="2.54" y="7.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="POWER_LED" gate="A" pin="1"/>
+<wire x1="-185.42" y1="-193.04" x2="-200.66" y2="-193.04" width="0.1524" layer="91"/>
+<label x="-200.66" y="-193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DR_ALL_I_SPI_CIPO" class="0">
@@ -8152,12 +8122,17 @@ Source: http://www.osram.convergy.de/</description>
 <net name="IN_VDDLS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="-307.34" y1="15.24" x2="-320.04" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-307.34" y1="15.24" x2="-312.42" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="15.24" x2="-320.04" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-320.04" y1="15.24" x2="-320.04" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="-320.04" y1="15.24" x2="-325.12" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-320.04" y="15.24"/>
 <label x="-325.12" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="EN"/>
+<wire x1="-307.34" y1="10.16" x2="-312.42" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="10.16" x2="-312.42" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-312.42" y="15.24"/>
 </segment>
 <segment>
 <pinref part="VDDLS" gate="G$1" pin="2"/>
@@ -8188,36 +8163,22 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="-279.4" y1="2.54" x2="-271.78" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="FB"/>
+<pinref part="IC1" gate="G$1" pin="ADJ"/>
 <wire x1="-271.78" y1="2.54" x2="-271.78" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="15.24" x2="-281.94" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <junction x="-271.78" y="2.54"/>
 </segment>
 </net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="C25" gate="G$1" pin="2"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="-254" y1="2.54" x2="-254" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-279.4" y1="-43.18" x2="-271.78" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="FB"/>
+<pinref part="IC2" gate="G$1" pin="ADJ"/>
 <wire x1="-271.78" y1="-43.18" x2="-271.78" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="-30.48" x2="-281.94" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <junction x="-271.78" y="-43.18"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-254" y1="-43.18" x2="-254" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN_VDDH" class="0">
@@ -8228,12 +8189,17 @@ Source: http://www.osram.convergy.de/</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="IN"/>
-<wire x1="-307.34" y1="-30.48" x2="-320.04" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-307.34" y1="-30.48" x2="-312.42" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-30.48" x2="-320.04" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-320.04" y1="-30.48" x2="-320.04" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-320.04" y1="-30.48" x2="-325.12" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-30.48"/>
 <label x="-325.12" y="-30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="EN"/>
+<wire x1="-307.34" y1="-35.56" x2="-312.42" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-35.56" x2="-312.42" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="-312.42" y="-30.48"/>
 </segment>
 </net>
 <net name="OUT_VDDH" class="0">
@@ -8259,36 +8225,22 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="-279.4" y1="-86.36" x2="-271.78" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="FB"/>
+<pinref part="IC5" gate="G$1" pin="ADJ"/>
 <wire x1="-271.78" y1="-86.36" x2="-271.78" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="-73.66" x2="-281.94" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <junction x="-271.78" y="-86.36"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-254" y1="-86.36" x2="-254" y2="-88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="-279.4" y1="-132.08" x2="-271.78" y2="-132.08" width="0.1524" layer="91"/>
-<pinref part="IC7" gate="G$1" pin="FB"/>
+<pinref part="IC7" gate="G$1" pin="ADJ"/>
 <wire x1="-271.78" y1="-132.08" x2="-271.78" y2="-119.38" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="-119.38" x2="-281.94" y2="-119.38" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <junction x="-271.78" y="-132.08"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="C6" gate="G$1" pin="2"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="-254" y1="-132.08" x2="-254" y2="-134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN_VDDQ" class="0">
@@ -8299,12 +8251,17 @@ Source: http://www.osram.convergy.de/</description>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="IN"/>
-<wire x1="-307.34" y1="-73.66" x2="-320.04" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-307.34" y1="-73.66" x2="-312.42" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-73.66" x2="-320.04" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-320.04" y1="-73.66" x2="-320.04" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-320.04" y1="-73.66" x2="-325.12" y2="-73.66" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-73.66"/>
 <label x="-325.12" y="-73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC5" gate="G$1" pin="EN"/>
+<wire x1="-307.34" y1="-78.74" x2="-312.42" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-78.74" x2="-312.42" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="-312.42" y="-73.66"/>
 </segment>
 </net>
 <net name="OUT_VDDQ" class="0">
@@ -8334,12 +8291,17 @@ Source: http://www.osram.convergy.de/</description>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="IN"/>
-<wire x1="-307.34" y1="-119.38" x2="-320.04" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-307.34" y1="-119.38" x2="-312.42" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-119.38" x2="-320.04" y2="-119.38" width="0.1524" layer="91"/>
 <wire x1="-320.04" y1="-119.38" x2="-320.04" y2="-124.46" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="-320.04" y1="-119.38" x2="-325.12" y2="-119.38" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-119.38"/>
 <label x="-325.12" y="-119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC7" gate="G$1" pin="EN"/>
+<wire x1="-307.34" y1="-124.46" x2="-312.42" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-124.46" x2="-312.42" y2="-119.38" width="0.1524" layer="91"/>
+<junction x="-312.42" y="-119.38"/>
 </segment>
 </net>
 <net name="OUT_VDD_3V3" class="0">
@@ -8365,29 +8327,27 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="-279.4" y1="-172.72" x2="-271.78" y2="-172.72" width="0.1524" layer="91"/>
-<pinref part="IC8" gate="G$1" pin="FB"/>
+<pinref part="IC8" gate="G$1" pin="ADJ"/>
 <wire x1="-271.78" y1="-172.72" x2="-271.78" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="-160.02" x2="-281.94" y2="-160.02" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <junction x="-271.78" y="-172.72"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="C8" gate="G$1" pin="2"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="-254" y1="-172.72" x2="-254" y2="-175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="IN_VDD_CORE" class="0">
 <segment>
 <pinref part="IC8" gate="G$1" pin="IN"/>
-<wire x1="-307.34" y1="-160.02" x2="-320.04" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="-307.34" y1="-160.02" x2="-312.42" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-160.02" x2="-320.04" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="-320.04" y1="-160.02" x2="-320.04" y2="-165.1" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="-320.04" y1="-160.02" x2="-325.12" y2="-160.02" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-160.02"/>
 <label x="-325.12" y="-160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC8" gate="G$1" pin="EN"/>
+<wire x1="-307.34" y1="-165.1" x2="-312.42" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-165.1" x2="-312.42" y2="-160.02" width="0.1524" layer="91"/>
+<junction x="-312.42" y="-160.02"/>
 </segment>
 <segment>
 <pinref part="VDD_CORE" gate="G$1" pin="2"/>
@@ -8423,18 +8383,11 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="-279.4" y1="-210.82" x2="-271.78" y2="-210.82" width="0.1524" layer="91"/>
-<pinref part="IC9" gate="G$1" pin="FB"/>
+<pinref part="IC9" gate="G$1" pin="ADJ"/>
 <wire x1="-271.78" y1="-210.82" x2="-271.78" y2="-198.12" width="0.1524" layer="91"/>
 <wire x1="-271.78" y1="-198.12" x2="-281.94" y2="-198.12" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <junction x="-271.78" y="-210.82"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="C10" gate="G$1" pin="2"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="-254" y1="-210.82" x2="-254" y2="-213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN_VDD" class="0">
@@ -8445,12 +8398,17 @@ Source: http://www.osram.convergy.de/</description>
 </segment>
 <segment>
 <pinref part="IC9" gate="G$1" pin="IN"/>
-<wire x1="-307.34" y1="-198.12" x2="-320.04" y2="-198.12" width="0.1524" layer="91"/>
+<wire x1="-307.34" y1="-198.12" x2="-312.42" y2="-198.12" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-198.12" x2="-320.04" y2="-198.12" width="0.1524" layer="91"/>
 <wire x1="-320.04" y1="-198.12" x2="-320.04" y2="-203.2" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="-320.04" y1="-198.12" x2="-325.12" y2="-198.12" width="0.1524" layer="91"/>
 <junction x="-320.04" y="-198.12"/>
 <label x="-325.12" y="-198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC9" gate="G$1" pin="EN"/>
+<wire x1="-307.34" y1="-203.2" x2="-312.42" y2="-203.2" width="0.1524" layer="91"/>
+<wire x1="-312.42" y1="-203.2" x2="-312.42" y2="-198.12" width="0.1524" layer="91"/>
+<junction x="-312.42" y="-198.12"/>
 </segment>
 </net>
 <net name="OUT_VDD" class="0">
@@ -8980,6 +8938,54 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="93.98" y1="249.428" x2="247.65" y2="249.428" width="0.1524" layer="91"/>
 <junction x="93.98" y="249.428"/>
 <junction x="247.65" y="249.428"/>
+</segment>
+</net>
+<net name="DR_SERV_VDD_LED" class="0">
+<segment>
+<pinref part="POWER_LED" gate="A" pin="2"/>
+<wire x1="-177.8" y1="-193.04" x2="-165.1" y2="-193.04" width="0.1524" layer="91"/>
+<label x="-165.1" y="-193.04" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q6" gate="G$1" pin="G"/>
+<wire x1="-71.12" y1="-86.36" x2="-81.28" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="-81.28" y1="-86.36" x2="-81.28" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-86.36" x2="-91.44" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="-81.28" y="-86.36"/>
+<label x="-91.44" y="-86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DR_VDD_LED" class="0">
+<segment>
+<pinref part="POWER_LED" gate="A" pin="4"/>
+<wire x1="-177.8" y1="-195.58" x2="-165.1" y2="-195.58" width="0.1524" layer="91"/>
+<label x="-165.1" y="-195.58" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q7" gate="G$1" pin="G"/>
+<wire x1="-71.12" y1="-119.38" x2="-81.28" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="R32" gate="G$1" pin="1"/>
+<wire x1="-81.28" y1="-119.38" x2="-81.28" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-119.38" x2="-91.44" y2="-119.38" width="0.1524" layer="91"/>
+<junction x="-81.28" y="-119.38"/>
+<label x="-91.44" y="-119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DR_OPEN8_VDD_LED" class="0">
+<segment>
+<pinref part="POWER_LED" gate="A" pin="6"/>
+<wire x1="-177.8" y1="-198.12" x2="-165.1" y2="-198.12" width="0.1524" layer="91"/>
+<label x="-165.1" y="-198.12" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="-71.12" y1="-53.34" x2="-81.28" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="-81.28" y1="-53.34" x2="-81.28" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-53.34" x2="-91.44" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-81.28" y="-53.34"/>
+<label x="-91.44" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
