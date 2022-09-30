@@ -1588,6 +1588,35 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-1.598" y1="-2.452" x2="-1.598" y2="2.452" width="0.2" layer="21"/>
 <wire x1="-3.475" y1="2.58" x2="-1.948" y2="2.58" width="0.2" layer="21"/>
 </package>
+<package name="GF063PB103K">
+<description>&lt;b&gt;GF063PB103K-3&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="0.78" diameter="1.337" shape="square"/>
+<pad name="2" x="2.5" y="2.5" drill="0.78" diameter="1.337"/>
+<pad name="3" x="5" y="0" drill="0.78" diameter="1.337"/>
+<text x="2.5" y="0.6" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="2.5" y="0.6" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-0.9" y1="4" x2="5.9" y2="4" width="0.1" layer="51"/>
+<wire x1="5.9" y1="4" x2="5.9" y2="-2.8" width="0.1" layer="51"/>
+<wire x1="5.9" y1="-2.8" x2="-0.9" y2="-2.8" width="0.1" layer="51"/>
+<wire x1="-0.9" y1="-2.8" x2="-0.9" y2="4" width="0.1" layer="51"/>
+<wire x1="-1.9" y1="5" x2="6.9" y2="5" width="0.1" layer="51"/>
+<wire x1="6.9" y1="5" x2="6.9" y2="-3.8" width="0.1" layer="51"/>
+<wire x1="6.9" y1="-3.8" x2="-1.9" y2="-3.8" width="0.1" layer="51"/>
+<wire x1="-1.9" y1="-3.8" x2="-1.9" y2="5" width="0.1" layer="51"/>
+<wire x1="-0.9" y1="1.2" x2="-0.9" y2="4" width="0.2" layer="21"/>
+<wire x1="-0.9" y1="4" x2="5.9" y2="4" width="0.2" layer="21"/>
+<wire x1="5.9" y1="4" x2="5.9" y2="1.2" width="0.2" layer="21"/>
+<wire x1="5.9" y1="-1.2" x2="5.9" y2="-2.8" width="0.2" layer="21"/>
+<wire x1="5.9" y1="-2.8" x2="-0.9" y2="-2.8" width="0.2" layer="21"/>
+<wire x1="-0.9" y1="-2.8" x2="-0.9" y2="-1.2" width="0.2" layer="21"/>
+<wire x1="-1.6" y1="0" x2="-1.6" y2="0" width="0.2" layer="21"/>
+<wire x1="-1.6" y1="0" x2="-1.5" y2="0" width="0.2" layer="21" curve="-180"/>
+<wire x1="-1.5" y1="0" x2="-1.5" y2="0" width="0.2" layer="21"/>
+<wire x1="-1.5" y1="0" x2="-1.6" y2="0" width="0.2" layer="21" curve="-180"/>
+<wire x1="-1.6" y1="0" x2="-1.6" y2="0" width="0.2" layer="21"/>
+<wire x1="-1.6" y1="0" x2="-1.5" y2="0" width="0.2" layer="21" curve="180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SS12SDP2">
@@ -1689,6 +1718,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="OUTPUT_B" x="71.12" y="-2.54" length="middle" rot="R180"/>
 <pin name="INVERTING_INPUT_B" x="71.12" y="-5.08" length="middle" rot="R180"/>
 <pin name="NON-INVERTING_INPUT_B" x="71.12" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="GF063PB103K">
+<wire x1="5.08" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-5.08" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="24.13" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="24.13" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="CCW" x="0" y="0" length="middle"/>
+<pin name="WIPER" x="27.94" y="0" length="middle" rot="R180"/>
+<pin name="CW" x="0" y="-2.54" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1929,6 +1969,36 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm358-n.pdf"&gt; Datasheet 
 <attribute name="MANUFACTURER_PART_NUMBER" value="LM358AMX/NOPB" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="926-LM358AMX/NOPB" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM358AMX-NOPB?qs=QbsRYf82W3GCS6w419KcQg%3D%3D" constant="no"/>
+<attribute name="MOUSER_TESTING_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_TESTING_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GF063PB103K" prefix="VR">
+<description>&lt;b&gt;Trimmer, Cermet, 0.5W, 10000ohm, 10% +/-Tol, 1 Turn(s)&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://akizukidenshi.com/download/ds/tocos/gf063_series-1.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="GF063PB103K" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GF063PB103K">
+<connects>
+<connect gate="G$1" pin="CCW" pad="1"/>
+<connect gate="G$1" pin="CW" pad="3"/>
+<connect gate="G$1" pin="WIPER" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ARROW_PART_NUMBER" value="" constant="no"/>
+<attribute name="ARROW_PRICE-STOCK" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Trimmer, Cermet, 0.5W, 10000ohm, 10% +/-Tol, 1 Turn(s)" constant="no"/>
+<attribute name="HEIGHT" value="5.8mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Tocos" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="GF063PB103K" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
 <attribute name="MOUSER_TESTING_PART_NUMBER" value="" constant="no"/>
 <attribute name="MOUSER_TESTING_PRICE-STOCK" value="" constant="no"/>
 </technology>
@@ -6385,7 +6455,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="LED" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
-<part name="WAKEUP_SIGNAL" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="WAKEUP" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="0.1uF"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37429/1" value="10uF"/>
@@ -6430,6 +6500,9 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <part name="0.5V" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="0.9V" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.3OHM" device="-0805-1/8W-1%" package3d_urn="urn:adsk.eagle:package:39651/1" value="10k"/>
+<part name="VR1" library="SamacSys_Parts" deviceset="GF063PB103K" device=""/>
+<part name="VR2" library="SamacSys_Parts" deviceset="GF063PB103K" device=""/>
+<part name="VR3" library="SamacSys_Parts" deviceset="GF063PB103K" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6648,7 +6721,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <attribute name="VALUE" x="154.94" y="114.046" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="154.94" y="106.172" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="WAKEUP_SIGNAL" gate="G$1" x="-66.04" y="-76.2" smashed="yes">
+<instance part="WAKEUP" gate="G$1" x="-66.04" y="-76.2" smashed="yes">
 <attribute name="VALUE" x="-68.58" y="-81.026" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-68.58" y="-70.612" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -6780,8 +6853,8 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <attribute name="NAME" x="265.43" y="-48.26" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="265.43" y="-50.8" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="SUPPLY5" gate="GND" x="195.58" y="-88.9" smashed="yes">
-<attribute name="VALUE" x="193.675" y="-92.075" size="1.778" layer="96"/>
+<instance part="SUPPLY5" gate="GND" x="195.58" y="-96.52" smashed="yes">
+<attribute name="VALUE" x="193.675" y="-99.695" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="185.42" y="-78.74" smashed="yes" rot="R270">
 <attribute name="NAME" x="186.944" y="-78.74" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
@@ -6817,6 +6890,18 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <instance part="R7" gate="G$1" x="76.2" y="-10.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.724" y="-10.16" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="74.676" y="-10.16" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+</instance>
+<instance part="VR1" gate="G$1" x="142.24" y="-83.82" smashed="yes">
+<attribute name="NAME" x="166.37" y="-76.2" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="166.37" y="-78.74" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="VR2" gate="G$1" x="142.24" y="-66.04" smashed="yes">
+<attribute name="NAME" x="166.37" y="-58.42" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="166.37" y="-60.96" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="VR3" gate="G$1" x="195.58" y="-43.18" smashed="yes">
+<attribute name="NAME" x="219.71" y="-35.56" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="219.71" y="-38.1" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -7017,7 +7102,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <wire x1="99.06" y1="-73.66" x2="99.06" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="WAKEUP_SIGNAL" gate="G$1" pin="1"/>
+<pinref part="WAKEUP" gate="G$1" pin="1"/>
 <wire x1="-58.42" y1="-76.2" x2="-48.26" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
 <wire x1="-48.26" y1="-78.74" x2="-48.26" y2="-76.2" width="0.1524" layer="91"/>
@@ -7138,12 +7223,17 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <segment>
 <pinref part="IC6" gate="G$1" pin="GND"/>
 <wire x1="198.12" y1="-63.5" x2="195.58" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="-63.5" x2="195.58" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-63.5" x2="195.58" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<pinref part="VR1" gate="G$1" pin="CW"/>
+<wire x1="195.58" y1="-91.44" x2="195.58" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-86.36" x2="142.24" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="-83.82" x2="185.42" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="-86.36" x2="195.58" y2="-86.36" width="0.1524" layer="91"/>
-<junction x="195.58" y="-86.36"/>
+<wire x1="142.24" y1="-91.44" x2="185.42" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-91.44" x2="185.42" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-91.44" x2="195.58" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="185.42" y="-91.44"/>
+<junction x="195.58" y="-91.44"/>
 </segment>
 <segment>
 <pinref part="SWITCH" gate="A" pin="2"/>
@@ -7751,6 +7841,9 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <wire x1="175.26" y1="-38.1" x2="175.26" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-35.56" x2="185.42" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="185.42" y="-35.56"/>
+<wire x1="185.42" y1="-35.56" x2="223.52" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="VR3" gate="G$1" pin="WIPER"/>
+<wire x1="223.52" y1="-35.56" x2="223.52" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="V+"/>
@@ -7871,7 +7964,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </net>
 <net name="WAKEUP_SIGNAL" class="0">
 <segment>
-<pinref part="WAKEUP_SIGNAL" gate="G$1" pin="2"/>
+<pinref part="WAKEUP" gate="G$1" pin="2"/>
 <wire x1="-58.42" y1="-73.66" x2="-48.26" y2="-73.66" width="0.1524" layer="91"/>
 <label x="-48.26" y="-73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -8048,6 +8141,10 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <junction x="175.26" y="-55.88"/>
 <wire x1="175.26" y1="-55.88" x2="175.26" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="VR2" gate="G$1" pin="WIPER"/>
+<wire x1="170.18" y1="-66.04" x2="170.18" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-60.96" x2="175.26" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="175.26" y="-60.96"/>
 </segment>
 </net>
 <net name="RESET_MUX" class="0">
@@ -8086,12 +8183,29 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="-60.96" x2="185.42" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-71.12" x2="185.42" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="-60.96" x2="185.42" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-60.96" x2="185.42" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="185.42" y="-60.96"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="-50.8" x2="185.42" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-71.12" x2="175.26" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="185.42" y="-71.12"/>
+<pinref part="VR2" gate="G$1" pin="CW"/>
+<wire x1="142.24" y1="-68.58" x2="142.24" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-73.66" x2="175.26" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="-73.66" x2="175.26" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="175.26" y="-71.12"/>
+<pinref part="VR1" gate="G$1" pin="WIPER"/>
+<wire x1="170.18" y1="-83.82" x2="170.18" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-76.2" x2="180.34" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-76.2" x2="180.34" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-73.66" x2="185.42" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="185.42" y="-73.66"/>
+<pinref part="VR3" gate="G$1" pin="CW"/>
+<wire x1="195.58" y1="-45.72" x2="190.5" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-45.72" x2="190.5" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-50.8" x2="185.42" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="185.42" y="-50.8"/>
 </segment>
 </net>
 <net name="POWER_0.5V" class="0">
