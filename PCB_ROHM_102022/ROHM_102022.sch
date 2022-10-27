@@ -6383,11 +6383,18 @@ LED</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-308.356" y="-147.828" size="6.4516" layer="91">JTAG</text>
 <text x="-298.54" y="-464.02" size="2.54" layer="91">SERV_JTAG</text>
 <text x="-328.7" y="-587.03" size="2.54" layer="91">SERV_FLASH</text>
 <text x="-7.834" y="-604.844" size="2.54" layer="91">SMA</text>
 <text x="311.444" y="-366.084" size="2.54" layer="91">SMA</text>
+<text x="-343.94" y="-330.49" size="6.4516" layer="91">SERV</text>
+<text x="171.68" y="-340.65" size="6.4516" layer="91">LEROS</text>
+<text x="-335.28" y="119.38" size="6.4516" layer="91">SOCKET</text>
+<text x="101.6" y="116.84" size="6.4516" layer="91">MEMORY</text>
+<text x="335.28" y="116.84" size="6.4516" layer="91">DLDO &amp; PUF</text>
+<text x="487.68" y="116.84" size="6.4516" layer="91">ROCKET_FPGA</text>
+<text x="347.98" y="-144.78" size="6.4516" layer="91">POWER</text>
+<text x="-281.94" y="-139.7" size="6.4516" layer="91">ROCKET</text>
 </plain>
 <instances>
 <instance part="SOCKET_1" gate="G$1" x="-198.12" y="53.34" smashed="yes">
